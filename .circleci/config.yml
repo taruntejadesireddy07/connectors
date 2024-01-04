@@ -57,7 +57,7 @@ jobs:
       - run:
           working_directory: ~/opencti/external-import/crtsh
           name: Run crtsh test
-          command: pip install -r test-requirements.txt && pytest --verbose src/crtsh/tests/test_crtsh_utils.py
+          command: pip install -r requirements.txt -r test-requirements.txt && pytest --verbose src/crtsh/tests/test_crtsh_utils.py
   build_1:
     working_directory: ~/opencti
     docker:
